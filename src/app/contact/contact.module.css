@@ -1,0 +1,277 @@
+@media screen and (min-width: 900px) {
+  .outer_div {
+    display: flex;
+    width: 100vw;
+    background-color: rgb(103, 103, 125);
+    height: 500px;
+    margin-bottom: 40px;
+  }
+  .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40%;
+
+    padding: 20px 10vw;
+    margin: 60px 10px;
+    border-right: 2px solid rgb(223, 211, 141);
+    border-radius: 0px;
+  }
+  .p1 {
+    color: rgb(255, 229, 31);
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .p2 {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 450;
+  }
+  .div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-left: 10vw;
+    padding-top: 40px;
+    width: 60%;
+  }
+  .p3 {
+    color: rgb(255, 229, 31);
+    padding: 0px 0;
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .p4 {
+    color: rgb(255, 255, 255);
+    padding-right: 20vw;
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  .input,
+  .input:focus {
+    outline: none;
+    height: 50px;
+    width: 30vw;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(69, 66, 66, 0.7);
+    margin: 4px 0;
+    padding: 0 10px;
+    color: white;
+  }
+  .input1,
+  .input1:focus {
+    resize: none;
+    outline: none;
+    height: 120px;
+    width: 30vw;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(69, 66, 66, 0.7);
+    margin: 4px 0;
+    padding: 5px 10px;
+    color: white;
+  }
+  .btn {
+    outline: none;
+    height: 40px;
+    width: 30vw;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(186, 200, 209, 0);
+    margin: 20px 0;
+    padding: 5px 10px;
+    color: rgb(255, 225, 0);
+    font-weight: 600;
+    background-color: rgb(74, 144, 255);
+    /* box-shadow: black 0px 0px 3px 0px; */
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 520px) {
+  .outer_div {
+    display: flex;
+    width: 100vw;
+    background-color: rgb(103, 103, 125);
+    height: 500px;
+    margin-bottom: 50px;
+  }
+  .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 35%;
+    padding: 30px 1vw;
+    margin: 40px 10px;
+    border-right: 2px solid rgb(223, 211, 141);
+    border-radius: 0px;
+  }
+  .p1 {
+    color: rgb(255, 229, 31);
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .p2 {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 450;
+  }
+  .div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 4vw;
+    padding-top: 40px;
+    width: 65%;
+  }
+  .p3 {
+    color: rgb(255, 229, 31);
+    padding: 0px 0;
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .p4 {
+    color: rgb(255, 255, 255);
+    padding-right: 10vw;
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  .input,
+  .input:focus {
+    outline: none;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(69, 66, 66, 0.7);
+    margin: 4px 0;
+    padding: 0 10px;
+    color: white;
+  }
+  .input1,
+  .input1:focus {
+    resize: none;
+    outline: none;
+    height: 120px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(69, 66, 66, 0.7);
+    margin: 4px 0;
+    padding: 5px 10px;
+    color: white;
+  }
+  .btn {
+    outline: none;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(186, 200, 209, 0);
+    margin: 20px 0;
+    padding: 5px 10px;
+    color: rgb(255, 229, 31);
+    font-weight: 500;
+    background-color: rgb(116, 125, 139);
+    /* box-shadow: black 0px 0px 3px 0px; */
+  }
+}
+@media screen and (max-width: 520px) {
+  .outer_div {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: rgb(103, 103, 125);
+    margin-bottom: 40px;
+  }
+  .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 300px;
+    width: 100%;
+    padding: 10px 1vw;
+    margin: 20px 10px;
+    border-right: 2px solid rgb(223, 211, 141);
+    border-radius: 0px;
+  }
+  .p1 {
+    color: rgb(255, 229, 31);
+    padding: 10px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .p2 {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 450;
+  }
+  .div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 4vw;
+    height: 500px;
+    padding-top: 40px;
+    width: 100%;
+  }
+  .p3 {
+    color: rgb(255, 229, 31);
+    padding: 0px 0;
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .p4 {
+    color: rgb(255, 255, 255);
+    padding-right: 10vw;
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  .input,
+  .input:focus {
+    outline: none;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(69, 66, 66, 0.7);
+    margin: 4px 0;
+    padding: 0 10px;
+    color: white;
+  }
+  .input1,
+  .input1:focus {
+    resize: none;
+    outline: none;
+    height: 120px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(69, 66, 66, 0.7);
+    margin: 4px 0;
+    padding: 5px 10px;
+    color: white;
+  }
+  .btn {
+    outline: none;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(186, 200, 209, 0);
+    margin: 20px 0;
+    padding: 5px 10px;
+    color: rgb(255, 229, 31);
+    font-weight: 500;
+    background-color: rgb(116, 125, 139);
+    /* box-shadow: black 0px 0px 3px 0px; */
+  }
+}

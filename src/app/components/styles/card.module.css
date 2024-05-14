@@ -5,8 +5,8 @@
     width: 100%;
     height: 300px;
     border-radius: 9px;
-    background-color: #ffffff;
-    box-shadow: inset rgb(68, 68, 68) 0px 0px 2px 0;
+    /* background-color: #ffffff; */
+    box-shadow: inset rgb(134, 134, 134) 0px 0px 2px 0;
     margin: 10px 5px;
   }
   .outer_div_1 {
@@ -34,7 +34,8 @@
     margin: 0 1px;
     font-weight: 600;
     font-size: 13px;
-    color: rgb(193, 251, 255);
+    color: white;
+    /* color: rgb(193, 251, 255); */
   }
   .outer_div_2 {
     display: flex;
@@ -49,7 +50,7 @@
     font-size: 17px;
     font-weight: bold;
     padding: 2px 0;
-    color: rgb(41, 41, 41);
+    /* color: rgb(41, 41, 41); */
     /* margin-bottom: 12px; */
   }
   .tripDuration {
@@ -77,13 +78,13 @@
   }
   .inner_div_3 {
     /* font-size: 14px; */
-    color: rgb(233, 97, 97);
+    /* color: rgb(233, 97, 97); */
     /* margin: 7px 0; */
     margin-bottom: 22px;
   }
   .inner_div_3 p {
     font-size: 12px;
-    color: black;
+    /* color: black; */
     font-weight: 600;
     padding: 2px 0;
   }
@@ -96,7 +97,7 @@
   .inner_div_4 p {
     font-size: 14px;
     font-weight: bold;
-    color: rgb(32, 32, 32);
+    /* color: rgb(32, 32, 32); */
   }
   .form1 {
     display: flex;
@@ -109,7 +110,7 @@
   .labels {
     font-size: 12px;
     font-weight: bold;
-    color: rgb(48, 48, 48);
+    /* color: rgb(48, 48, 48); */
   }
   .inner_div_5 {
     display: flex;
@@ -156,8 +157,8 @@
     width: 100%;
     height: 300px;
     border-radius: 9px;
-    background-color: #ffffff;
-    box-shadow: inset rgb(68, 68, 68) 0px 0px 2px 0;
+    /* background-color: #ffffff; */
+    box-shadow: inset rgb(131, 131, 131) 0px 0px 2px 0;
     margin: 10px 5px;
   }
   .outer_div_1 {
@@ -201,7 +202,7 @@
     font-size: 17px;
     font-weight: bold;
     padding: 2px 0;
-    color: rgb(41, 41, 41);
+    /* color: rgb(41, 41, 41); */
     /* margin-bottom: 12px; */
   }
   .tripDuration {
@@ -229,13 +230,13 @@
   }
   .inner_div_3 {
     /* font-size: 14px; */
-    color: rgb(233, 97, 97);
+    /* color: rgb(233, 97, 97); */
     /* margin: 7px 0; */
     margin-bottom: 22px;
   }
   .inner_div_3 p {
     font-size: 12px;
-    color: black;
+    /* color: black; */
     font-weight: 600;
     padding: 2px 0;
   }
@@ -248,7 +249,7 @@
   .inner_div_4 p {
     font-size: 14px;
     font-weight: bold;
-    color: rgb(32, 32, 32);
+    /* color: rgb(32, 32, 32); */
   }
   .form1 {
     display: flex;
@@ -261,7 +262,7 @@
   .labels {
     font-size: 12px;
     font-weight: bold;
-    color: rgb(48, 48, 48);
+    /* color: rgb(48, 48, 48); */
   }
   .inner_div_5 {
     display: flex;
@@ -309,8 +310,8 @@
     width: 100%;
     /* height: 300px; */
     border-radius: 9px;
-    background-color: #ffffff;
-    box-shadow: inset rgb(68, 68, 68) 0px 0px 2px 0;
+    /* background-color: #ffffff; */
+    box-shadow: inset rgb(142, 142, 142) 0px 0px 2px 0;
     margin: 10px 5px;
   }
   .outer_div_1 {
@@ -355,7 +356,7 @@
     font-size: 17px;
     font-weight: bold;
     padding: 2px 0;
-    color: rgb(41, 41, 41);
+    /* color: rgb(41, 41, 41); */
     /* margin-bottom: 12px; */
   }
   .tripDuration {
@@ -383,13 +384,13 @@
   }
   .inner_div_3 {
     /* font-size: 14px; */
-    color: rgb(233, 97, 97);
+    /* color: rgb(233, 97, 97); */
     /* margin: 7px 0; */
     margin-bottom: 22px;
   }
   .inner_div_3 p {
     font-size: 12px;
-    color: black;
+    /* color: black; */
     font-weight: 600;
     padding: 2px 0;
   }
@@ -402,7 +403,7 @@
   .inner_div_4 p {
     font-size: 14px;
     font-weight: bold;
-    color: rgb(32, 32, 32);
+    /* color: rgb(32, 32, 32); */
   }
   .form1 {
     display: flex;
@@ -415,7 +416,7 @@
   .labels {
     font-size: 12px;
     font-weight: bold;
-    color: rgb(48, 48, 48);
+    /* color: rgb(48, 48, 48); */
   }
   .inner_div_5 {
     display: flex;
