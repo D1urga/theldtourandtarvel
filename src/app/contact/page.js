@@ -4,9 +4,10 @@ import styles from "./contact.module.css";
 export default function ContactUs() {
   return (
     <div className={styles.main}>
+      <p className={styles.contact_title}>Contact us</p>
       <div className={styles.outer_div}>
         <div className={styles.div1}>
-          <div>
+          <div className={styles.dv}>
             {" "}
             <p className={styles.p1}>opening hours</p>
             <p className={styles.p2}>monday - friday</p>
@@ -14,18 +15,18 @@ export default function ContactUs() {
             <p className={styles.p2}>weekend</p>
             <p className={styles.p2}>closed</p>
           </div>
-          <div>
+          <div className={styles.dv}>
             {" "}
             <p className={styles.p1}>address</p>
-            <p className={styles.p2}>lhambra, CA 91801.</p>
-            <p className={styles.p2}> 329 Saxon Street. San Francisco,</p>{" "}
-            <p className={styles.p2}> CA 94109. 465 Littleton Street</p>
+            <p className={styles.p2}>Garg Mansion</p>
+            <p className={styles.p2}> CB-01/1D , SEC-44</p>{" "}
+            <p className={styles.p2}> NOIDA , INDIA</p>
           </div>{" "}
-          <div>
+          <div className={styles.dv}>
             {" "}
             <p className={styles.p1}>support</p>
-            <p className={styles.p2}>help@gmail.com</p>
-            <p className={styles.p2}>+61 21 6339-0806</p>{" "}
+            <p className={styles.p2}>theldtourandtravels@gmail.com</p>
+            <p className={styles.p2}>+91 9821915850</p>{" "}
           </div>
         </div>
         <div className={styles.div2}>

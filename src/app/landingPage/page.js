@@ -4,6 +4,8 @@ import Navbar from "../components/navbar";
 import Bestsellingcard from "../components/bestsellingcard";
 import Card from "../components/card.js";
 import { FaAngleDown, FaArrowDown } from "react-icons/fa";
+import ContactUs from "../contact/page";
+import Footer from "../footer/page";
 
 export default function LandingPage() {
   const txt1 = ` Tour Packages are one of the best ways to travel hassle-free. With
@@ -83,6 +85,8 @@ export default function LandingPage() {
           <Card />
         </div>
       </div>
+      <ContactUs />
+      <Footer />
     </div>
   );
 }

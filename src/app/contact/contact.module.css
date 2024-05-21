@@ -2,9 +2,14 @@
   .outer_div {
     display: flex;
     width: 100vw;
-    background-color: rgb(103, 103, 125);
+    /* background-color: rgb(103, 103, 125); */
     height: 500px;
     margin-bottom: 40px;
+  }
+  .contact_title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
   }
   .div1 {
     display: flex;
@@ -15,17 +20,18 @@
 
     padding: 20px 10vw;
     margin: 60px 10px;
-    border-right: 2px solid rgb(223, 211, 141);
+    border-right: 2px solid rgb(228, 221, 178);
     border-radius: 0px;
   }
   .p1 {
-    color: rgb(255, 229, 31);
+    /* color: rgb(0, 0, 0); */
     padding: 10px 0;
+    font-weight: 500;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   .p2 {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     font-size: 13px;
     font-weight: 450;
   }
@@ -39,14 +45,15 @@
     width: 60%;
   }
   .p3 {
-    color: rgb(255, 229, 31);
+    /* color: rgb(255, 229, 31); */
     padding: 0px 0;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 500;
   }
   .p4 {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     padding-right: 20vw;
     font-size: 13px;
     margin: 10px 0;
@@ -58,10 +65,10 @@
     width: 30vw;
     border: none;
     border-radius: 10px;
-    background-color: rgba(69, 66, 66, 0.7);
+    background-color: rgba(204, 204, 204, 0.2);
     margin: 4px 0;
     padding: 0 10px;
-    color: white;
+    /* color: white; */
   }
   .input1,
   .input1:focus {
@@ -71,10 +78,10 @@
     width: 30vw;
     border: none;
     border-radius: 10px;
-    background-color: rgba(69, 66, 66, 0.7);
+    background-color: rgba(204, 204, 204, 0.2);
     margin: 4px 0;
     padding: 5px 10px;
-    color: white;
+    /* color: white; */
   }
   .btn {
     outline: none;
@@ -82,12 +89,12 @@
     width: 30vw;
     border: none;
     border-radius: 10px;
-    background-color: rgb(186, 200, 209, 0);
+
     margin: 20px 0;
     padding: 5px 10px;
-    color: rgb(255, 225, 0);
+    /* color: rgb(255, 255, 255); */
     font-weight: 600;
-    background-color: rgb(74, 144, 255);
+    background-color: rgb(179, 204, 245, 0.3);
     /* box-shadow: black 0px 0px 3px 0px; */
   }
 }
@@ -95,9 +102,14 @@
   .outer_div {
     display: flex;
     width: 100vw;
-    background-color: rgb(103, 103, 125);
+    /* background-color: rgb(103, 103, 125); */
     height: 500px;
     margin-bottom: 50px;
+  }
+  .contact_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
   }
   .div1 {
     display: flex;
@@ -107,17 +119,18 @@
     width: 35%;
     padding: 30px 1vw;
     margin: 40px 10px;
-    border-right: 2px solid rgb(223, 211, 141);
+    border-right: 2px solid rgb(217, 210, 172);
     border-radius: 0px;
   }
   .p1 {
-    color: rgb(255, 229, 31);
+    /* color: rgb(255, 229, 31); */
     padding: 10px 0;
+    font-weight: 500;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   .p2 {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     font-size: 13px;
     font-weight: 450;
   }
@@ -130,14 +143,15 @@
     width: 65%;
   }
   .p3 {
-    color: rgb(255, 229, 31);
+    /* color: rgb(255, 229, 31); */
     padding: 0px 0;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 17px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   .p4 {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     padding-right: 10vw;
     font-size: 13px;
     margin: 10px 0;
@@ -149,10 +163,10 @@
     width: 100%;
     border: none;
     border-radius: 10px;
-    background-color: rgba(69, 66, 66, 0.7);
+    background-color: rgba(204, 204, 204, 0.2);
     margin: 4px 0;
     padding: 0 10px;
-    color: white;
+    /* color: white; */
   }
   .input1,
   .input1:focus {
@@ -162,10 +176,10 @@
     width: 100%;
     border: none;
     border-radius: 10px;
-    background-color: rgba(69, 66, 66, 0.7);
+    background-color: rgba(204, 204, 204, 0.2);
     margin: 4px 0;
     padding: 5px 10px;
-    color: white;
+    /* color: white; */
   }
   .btn {
     outline: none;
@@ -176,9 +190,9 @@
     background-color: rgb(186, 200, 209, 0);
     margin: 20px 0;
     padding: 5px 10px;
-    color: rgb(255, 229, 31);
+    /* color: rgb(255, 229, 31); */
     font-weight: 500;
-    background-color: rgb(116, 125, 139);
+    background-color: rgb(179, 204, 245, 0.3);
     /* box-shadow: black 0px 0px 3px 0px; */
   }
 }
@@ -187,52 +201,66 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    background-color: rgb(103, 103, 125);
+    /* background-color: rgb(103, 103, 125); */
     margin-bottom: 40px;
+  }
+  .contact_title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
   }
   .div1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     height: 300px;
     width: 100%;
-    padding: 10px 1vw;
-    margin: 20px 10px;
-    border-right: 2px solid rgb(223, 211, 141);
+    padding: 10px 0;
+    margin: 20px 0;
+    border-right: 2px solid rgb(214, 207, 167);
     border-radius: 0px;
   }
+  .dv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .p1 {
-    color: rgb(255, 229, 31);
+    /* color: rgb(255, 229, 31); */
     padding: 10px 0;
+    font-weight: 500;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   .p2 {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     font-size: 13px;
+    text-align: center;
     font-weight: 450;
   }
   .div2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 0 4vw;
     height: 500px;
     padding-top: 40px;
     width: 100%;
   }
   .p3 {
-    color: rgb(255, 229, 31);
+    /* color: rgb(255, 229, 31); */
     padding: 0px 0;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 500;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   .p4 {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     padding-right: 10vw;
     font-size: 13px;
+    text-align: center;
     margin: 10px 0;
   }
   .input,
@@ -242,10 +270,10 @@
     width: 100%;
     border: none;
     border-radius: 10px;
-    background-color: rgba(69, 66, 66, 0.7);
+    background-color: rgba(204, 204, 204, 0.2);
     margin: 4px 0;
     padding: 0 10px;
-    color: white;
+    /* color: white; */
   }
   .input1,
   .input1:focus {
@@ -255,10 +283,10 @@
     width: 100%;
     border: none;
     border-radius: 10px;
-    background-color: rgba(69, 66, 66, 0.7);
+    background-color: rgba(204, 204, 204, 0.2);
     margin: 4px 0;
     padding: 5px 10px;
-    color: white;
+    /* color: white; */
   }
   .btn {
     outline: none;
@@ -269,9 +297,9 @@
     background-color: rgb(186, 200, 209, 0);
     margin: 20px 0;
     padding: 5px 10px;
-    color: rgb(255, 229, 31);
+    /* color: rgb(255, 229, 31); */
     font-weight: 500;
-    background-color: rgb(116, 125, 139);
+    background-color: rgb(179, 204, 245, 0.3);
     /* box-shadow: black 0px 0px 3px 0px; */
   }
 }
