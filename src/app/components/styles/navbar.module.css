@@ -261,6 +261,7 @@
     /* background-color: rgb(0, 0, 0, 0.3); */
     border-radius: 30px;
     transition: 300ms ease-in-out;
+    color: white;
   }
   .links:hover {
     transition: 300ms ease-in-out;
@@ -415,6 +416,7 @@
     /* background-color: rgb(0, 0, 0, 0.3); */
     border-radius: 30px;
     transition: 300ms ease-in-out;
+    color: white;
   }
   .links:hover {
     transition: 300ms ease-in-out;
