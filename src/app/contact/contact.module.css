@@ -65,10 +65,11 @@
     width: 30vw;
     border: none;
     border-radius: 10px;
-    background-color: rgba(204, 204, 204, 0.2);
+    /* background-color: rgba(204, 204, 204, 0.2); */
     margin: 4px 0;
     padding: 0 10px;
     /* color: white; */
+    border: 1px solid;
   }
   .input1,
   .input1:focus {
@@ -78,10 +79,11 @@
     width: 30vw;
     border: none;
     border-radius: 10px;
-    background-color: rgba(204, 204, 204, 0.2);
+    /* background-color: rgba(204, 204, 204, 0.2); */
     margin: 4px 0;
     padding: 5px 10px;
     /* color: white; */
+    border: 1px solid;
   }
   .btn {
     outline: none;
@@ -163,10 +165,11 @@
     width: 100%;
     border: none;
     border-radius: 10px;
-    background-color: rgba(204, 204, 204, 0.2);
+    /* background-color: rgba(204, 204, 204, 0.2); */
     margin: 4px 0;
     padding: 0 10px;
     /* color: white; */
+    border: 1px solid;
   }
   .input1,
   .input1:focus {
@@ -176,10 +179,11 @@
     width: 100%;
     border: none;
     border-radius: 10px;
-    background-color: rgba(204, 204, 204, 0.2);
+    /* background-color: rgba(204, 204, 204, 0.2); */
     margin: 4px 0;
     padding: 5px 10px;
     /* color: white; */
+    border: 1px solid;
   }
   .btn {
     outline: none;
@@ -271,10 +275,11 @@
     width: 100%;
     border: none;
     border-radius: 10px;
-    background-color: rgba(179, 179, 179, 0.1);
+    /* background-color: rgba(179, 179, 179, 0.1); */
     margin: 4px 0;
     padding: 0 10px;
     /* color: white; */
+    border: 1px solid;
   }
   .input1,
   .input1:focus {
@@ -284,10 +289,11 @@
     width: 100%;
     border: none;
     border-radius: 10px;
-    background-color: rgba(179, 179, 179, 0.1);
+    /* background-color: rgba(179, 179, 179, 0.1); */
     margin: 4px 0;
     padding: 5px 10px;
     /* color: white; */
+    border: 1px solid;
   }
   .btn {
     outline: none;

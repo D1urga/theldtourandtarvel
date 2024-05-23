@@ -22,7 +22,7 @@ export default function Navbar() {
             <FaPhoneAlt className={styles.icon} />
             <div>
               <p>Call us for details</p>
-              <p>1800-123-5555</p>
+              <p>+91 9821915850</p>
             </div>
           </div>
           <div className={styles.title}>

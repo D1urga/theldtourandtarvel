@@ -20,10 +20,12 @@ export default function Footer() {
           <p className={styles.p1}>{title}</p>
         </div>
         <div className={styles.div2}>
-          <p className={styles.p21}>about ldtravel</p>
+          <p className={styles.p21}>About Ldtravel</p>
           <p className={styles.p22}>about us</p>
           <p className={styles.p22}>trust & safety</p>
           <p className={styles.p22}>contact us</p>
+          <p className={styles.p22}>cookie policy</p>
+          <p className={styles.p22}>privacy policy</p>
         </div>
         <div className={styles.div3}>
           {" "}
@@ -36,7 +38,7 @@ export default function Footer() {
         </div>
         <div className={styles.div4}>
           {" "}
-          <p className={styles.p21}>follows</p>
+          <p className={styles.p21}>Follows</p>
           <div className={styles.icons}>
             <FaTwitter className={styles.icon} />
             <FaFacebookF className={styles.icon} />

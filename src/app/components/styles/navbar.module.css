@@ -221,7 +221,7 @@
     padding: 20px 3vw;
   }
   .icons {
-    display: flex;
+    display: none;
   }
   .icon2 {
     color: rgb(0, 0, 0);
@@ -270,19 +270,16 @@
     border: none;
     background-color: rgb(0, 0, 0);
     padding: 10px 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 30px;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     transition: 300ms ease-in-out;
     user-select: none;
-  }
-  .btn:hover {
     background-color: white;
-    transition: 300ms ease-in-out;
-    color: black;
   }
+
   .menu {
     color: white;
   }
@@ -297,7 +294,7 @@
 
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(114, 114, 116);
+    background-color: black;
   }
   .nav1 {
     display: none;
@@ -379,7 +376,7 @@
     padding: 20px 3vw;
   }
   .icons {
-    display: flex;
+    display: none;
   }
   .icon2 {
     color: rgb(0, 0, 0);
@@ -406,7 +403,6 @@
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-
     height: 30vh;
   }
   .links {
@@ -428,19 +424,16 @@
     border: none;
     background-color: rgb(0, 0, 0);
     padding: 10px 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 30px;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     transition: 300ms ease-in-out;
     user-select: none;
-  }
-  .btn:hover {
     background-color: white;
-    transition: 300ms ease-in-out;
-    color: black;
   }
+
   .menu {
     color: white;
   }
@@ -455,7 +448,7 @@
 
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(114, 114, 116);
+    background-color: black;
   }
   .nav1 {
     display: none;
