@@ -91,11 +91,11 @@ body {
       height: 3px;
     }
     *::-webkit-scrollbar-track {
-      background: rgb(255, 255, 255);
+      /* background: rgb(255, 255, 255); */
       border-radius: 1px;
     }
     *::-webkit-scrollbar-thumb {
-      background: rgb(129, 129, 129);
+      background: rgb(162, 151, 151);
       border-radius: 15px;
     }
     input:focus {
@@ -127,14 +127,14 @@ body {
       height: 0px;
     }
     *::-webkit-scrollbar-track {
-      background: rgb(255, 255, 255) !important;
+      /* background: rgb(255, 255, 255) !important; */
       border-radius: 1px !important;
       height: 0px !important;
     }
     *::-webkit-scrollbar-thumb {
-      background-color: rgb(79, 69, 69) !important;
+      background-color: rgb(151, 135, 135) !important;
       border-radius: 15px !important;
-      border: 0px solid rgb(179, 179, 179) !important;
+      /* border: 0px solid rgb(179, 179, 179) !important; */
     }
     input:focus {
       outline: none !important;
