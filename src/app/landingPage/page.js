@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import styles from "./landingpage.module.css";
 import Navbar from "../components/navbar";
@@ -8,6 +10,18 @@ import ContactUs from "../contact/page";
 import Footer from "../footer/page";
 
 export default function LandingPage() {
+  const scrolldes = () => {
+    var elmntToView = document.getElementById("destinationid");
+    elmntToView.scrollIntoView();
+  };
+  const scrollpack = () => {
+    var elmntToView = document.getElementById("packageid");
+    elmntToView.scrollIntoView();
+  };
+  const scrollcont = () => {
+    var elmntToView = document.getElementById("contactid");
+    elmntToView.scrollIntoView();
+  };
   const txt1 = ` Tour Packages are one of the best ways to travel hassle-free. With
           seamless planning, arrangements, and transfers being taken care of,
           booking tour packages from India is the best way to explore the
@@ -15,7 +29,7 @@ export default function LandingPage() {
   return (
     <div className={styles.main}>
       <div className={styles.outer_div}>
-        <Navbar />
+        <Navbar fn2={scrollpack} fn3={scrolldes} fn5={scrollcont} />
         <div className={styles.page1}>
           <div className={styles.title}>
             <p>FIND THE PERFECT</p>
@@ -35,7 +49,7 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <div className={styles.tour_package}>
+      <div className={styles.tour_package} id="packageid">
         <p className={styles.p1}>Tour Package</p>
         <p className={styles.p2}>{txt1}</p>
         <p className={styles.p1}>Bestselling Tour Packages</p>
@@ -45,7 +59,7 @@ export default function LandingPage() {
           <Bestsellingcard />
         </div>
       </div>
-      <div className={styles.alltrips}>
+      <div className={styles.alltrips} id="destinationid">
         <div className={styles.left_div}>
           <p className={styles.cats}>Categories</p>
           <div className={styles.cat}>
@@ -75,17 +89,18 @@ export default function LandingPage() {
         </div>
         <div className={styles.right_div}>
           <p className={styles.heading}>Showing 144 Bali Tour Packages</p>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card imgurl={"/bg2.png"} />
+          <Card imgurl={"/bg3.jpg"} />
+          <Card imgurl={"/bg4.jpg"} />
+          <Card imgurl={"/bg5.jpg"} />
+          <Card imgurl={"/bg6.jpg"} />
+          <Card imgurl={"/bg7.jpg"} />
+          <Card imgurl={"/bg8.jpg"} />
         </div>
       </div>
-      <ContactUs />
+      <div id="contactid">
+        <ContactUs />
+      </div>
       <Footer />
     </div>
   );

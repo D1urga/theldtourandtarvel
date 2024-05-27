@@ -17,7 +17,7 @@ export default function Footer() {
       <div className={styles.outer_div}>
         <div className={styles.div1}>
           <img src="/logo.png" className={styles.logo}></img>
-          <p className={styles.p1}>{title}</p>
+          <p className={styles.p1}>The Ldtravel</p>
         </div>
         <div className={styles.div2}>
           <p className={styles.p21}>About Ldtravel</p>

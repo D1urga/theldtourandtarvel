@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./styles/card.module.css";
 import { FaInstagram, FaRupeeSign } from "react-icons/fa";
 
-export default function Card() {
+export default function Card({ imgurl }) {
   return (
     <div className={styles.Main}>
       <div className={styles.outer_div_1}>
+        <img src={imgurl} className={styles.bgimg}></img>
         <div className={styles.themes}>
           <p className={styles.theme1}>Adventure</p>
           <p className={styles.theme1}>Nightlife</p>

@@ -11,7 +11,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-export default function Navbar() {
+export default function Navbar({ fn1, fn2, fn3, fn4, fn5 }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={styles.main}>
@@ -53,29 +53,29 @@ export default function Navbar() {
             </div>
             <ul className={styles.list}>
               <li>
-                <Link className={styles.links} href="">
+                <p className={styles.links} href="" onClick={fn1}>
                   Home
-                </Link>
+                </p>
               </li>
               <li>
-                <Link className={styles.links} href="">
+                <p className={styles.links} href="" onClick={fn2}>
                   Packages
-                </Link>
+                </p>
               </li>{" "}
               <li>
-                <Link className={styles.links} href="">
+                <p className={styles.links} href="" onClick={fn3}>
                   Destination
-                </Link>
+                </p>
               </li>{" "}
               <li>
-                <Link className={styles.links} href="">
+                <p className={styles.links} href="" onClick={fn4}>
                   About us
-                </Link>
+                </p>
               </li>{" "}
               <li>
-                <Link className={styles.links} href="">
+                <p className={styles.links} href="" onClick={fn5}>
                   Contact us
-                </Link>
+                </p>
               </li>{" "}
             </ul>
             <button className={styles.btn}>Book Now</button>
