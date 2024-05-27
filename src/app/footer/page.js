@@ -13,6 +13,7 @@ import {
 
 export default function Footer() {
   const [visible, setVisible] = useState(false);
+  const [cvisible, setCvisible] = useState(false);
   const title = `LDTravel excels in providing seamless booking experiences for tours and travels, offering a comprehensive range of services tailored to meet the diverse needs and preferences of travelers worldwide.`;
 
   const t1 = `The Air Conditioning will be switched off in the hills. Also,
@@ -52,7 +53,14 @@ export default function Footer() {
           >
             Terms and Conditions
           </p>
-          <p className={styles.p34}>Cancellation</p>
+          <p
+            className={styles.p34}
+            onClick={() => {
+              setCvisible(!cvisible);
+            }}
+          >
+            Cancellation
+          </p>
           <p className={styles.p21}>Follows</p>
           <div className={styles.icons}>
             <FaTwitter className={styles.icon} />
@@ -180,6 +188,52 @@ export default function Footer() {
               className={styles.agree_button}
               onClick={() => {
                 setVisible(!visible);
+              }}
+            >
+              Agree
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className={cvisible ? styles.cancel : styles.cancel1}>
+        <div className={styles.inner_div}>
+          <p className={styles.p41}>Terms and Conditions</p>
+          <ul className={styles.termslist}>
+            <li>
+              <p>
+                If cancellations are made 30 days before the start date of the
+                trip, 50% of the trip cost will be charged as cancellation fees.
+              </p>
+            </li>
+            <li>
+              <p>
+                If cancellations are made 15-30 days before the start date of
+                the trip, 75% of the trip cost will be charged as cancellation
+                fees.
+              </p>
+            </li>{" "}
+            <li>
+              <p>
+                If cancellations are made within 0-15 days before the start date
+                of the trip, 100% of the trip cost will be charged as
+                cancellation fees.
+              </p>
+            </li>{" "}
+            <li>
+              <p>
+                In the case of unforeseen weather conditions or government
+                restrictions, certain activities may be canceled and in such
+                cases, the operator will try his best to provide an alternate
+                feasible activity. However, no refund will be provided for the
+                same.
+              </p>
+            </li>{" "}
+          </ul>
+          <div className={styles.agree_div}>
+            <button
+              className={styles.agree_button}
+              onClick={() => {
+                setCvisible(!cvisible);
               }}
             >
               Agree
