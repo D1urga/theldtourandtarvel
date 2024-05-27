@@ -220,7 +220,7 @@
     font-size: 22px;
     font-weight: 500;
     padding-top: 40px;
-    color: rgb(208, 187, 25);
+    color: rgb(228, 161, 16);
   }
   .div1 {
     display: flex;
@@ -320,7 +320,7 @@
     /* color: rgb(255, 255, 255); */
     /* border: 1px solid rgb(208, 187, 25); */
     /* box-shadow: black 0px 0px 3px 0px; */
-    /* border: 1px solid rgb(225, 164, 10); */
+    border: 1px solid;
     background-color: rgba(137, 137, 137, 0.2);
   }
 }
