@@ -218,9 +218,9 @@
   .contact_title {
     text-align: center;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
     padding-top: 40px;
-    color: rgb(228, 161, 16);
+    /* color: rgb(228, 161, 16); */
   }
   .div1 {
     display: flex;
