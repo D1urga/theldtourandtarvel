@@ -204,7 +204,6 @@
   }
   .input,
   .input:focus {
-    display: none;
     height: 50px;
     width: 30vw;
     margin: 0;
@@ -220,15 +219,14 @@
   }
   .btn {
     height: 50px;
-    width: 65vw;
+    width: 30vw;
     border: none;
     padding: 0 10px;
     background-color: rgb(26, 121, 255);
     color: white;
     font-weight: 600;
-    /* border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; */
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .tour_package {
     display: flex;
@@ -260,8 +258,28 @@
     flex-direction: column;
     padding: 20px 4vw;
     width: 100vw;
-    height: 300px;
-    /* background-color: #ffffff; */
+  }
+  .search_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search {
+    height: 50px;
+    width: 70vw;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 3px 0;
+    border-radius: 50px;
+    padding: 0 20px;
+    font-weight: 550;
+  }
+  .search_icon {
+    font-size: 50px;
+    box-shadow: 0 0 4px 0;
+    padding: 15px;
+    border-radius: 40px;
+    margin-left: 10px;
   }
   .right_div {
     display: flex;
@@ -308,7 +326,7 @@
     height: 800px;
     width: 100vw;
 
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
     /* padding-bottom: 30px; */
     /* margin-bottom: 400px; */
   }
@@ -335,7 +353,6 @@
   }
   .input,
   .input:focus {
-    display: none;
     height: 50px;
     width: 30vw;
     margin: 0;
@@ -358,15 +375,14 @@
 
   .btn {
     height: 50px;
-    width: 65vw;
+    width: 30vw;
     border: none;
     padding: 0 10px;
     background-color: rgb(26, 121, 255);
     color: white;
     font-weight: 600;
-    /* border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; */
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .tour_package {
     display: flex;
@@ -379,13 +395,14 @@
     font-weight: 520;
   }
   .p2 {
-    padding: 40px 10vw;
+    padding: 40px 1vw;
     text-align: center;
     font-weight: 450;
   }
   .bestcards {
     width: 100vw;
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(1, 1fr);
   }
   .alltrips {
@@ -398,15 +415,37 @@
     flex-direction: column;
     padding: 20px 4vw;
     width: 100vw;
-    height: 300px;
+
     /* background-color: #ffffff; */
+  }
+  .search_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search {
+    height: 45px;
+    width: 80vw;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 3px 0;
+    border-radius: 50px;
+    padding: 0 20px;
+    font-weight: 550;
+  }
+  .search_icon {
+    font-size: 45px;
+    box-shadow: 0 0 4px 0;
+    padding: 15px;
+    border-radius: 40px;
+    margin-left: 10px;
   }
   .right_div {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 95vw;
-    height: 655px;
+    max-height: 655px;
     /* background-color: #ffffff; */
     padding: 0 0px;
     overflow-y: scroll;

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles/card.module.css";
 import { FaInstagram, FaRupeeSign } from "react-icons/fa";
 
-export default function Card({ imgurl }) {
+export default function Card({ imgurl, triplocation }) {
   return (
     <div className={styles.Main}>
       <div className={styles.outer_div_1}>
@@ -14,7 +14,7 @@ export default function Card({ imgurl }) {
       </div>
       <div className={styles.outer_div_2}>
         <div className={styles.inner_div_1}>
-          <p className={styles.tripLocation}>Bali local Tour Package</p>
+          <p className={styles.tripLocation}>{triplocation}</p>
           <p className={styles.tripDuration}>10 Days & 9 Nights</p>
         </div>
         <div className={styles.inner_div_2}>
@@ -52,8 +52,8 @@ export default function Card({ imgurl }) {
         <div className={styles.inner_div_5}>
           <p>Cities:</p>
           <p className={styles.cities}>Kuta(5D)</p>
-          <p className={styles.cities}>-{">"}</p>
-          <p>Ubud(5D)</p>
+          <p className={styles.cities}>{"-"}</p>
+          <p className={styles.cities}>Ubud(5D)</p>
         </div>
         <div className={styles.inner_div_6}>
           <button className={styles.button1}>View Details</button>

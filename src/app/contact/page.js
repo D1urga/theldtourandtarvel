@@ -4,7 +4,7 @@ import styles from "./contact.module.css";
 export default function ContactUs() {
   return (
     <div className={styles.main}>
-      <p className={styles.contact_title}>Contact us</p>
+      <p className={styles.contact_title}>Contact Us</p>
       <div className={styles.outer_div}>
         <div className={styles.div1}>
           <div className={styles.dv}>
@@ -30,10 +30,9 @@ export default function ContactUs() {
           </div>
         </div>
         <div className={styles.div2}>
-          <p className={styles.p3}>Contact us</p>
+          {/* <p className={styles.p3}>Contact us</p> */}
           <p className={styles.p4}>
-            Feel free to contact us and we will get back to you as soon as we
-            can
+            Feel free to contact us and we will get back to you as soon
           </p>
           <input className={styles.input} placeholder="Enter your name"></input>
           <input
