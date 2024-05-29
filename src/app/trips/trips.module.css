@@ -415,7 +415,7 @@
     /* border: 1px solid; */
     /* box-shadow: 0 0 4px 0px; */
     border-radius: 10px;
-    margin: 0 5px;
+    margin: 0 0px;
     margin-top: 5px;
   }
   .left_div {
@@ -457,14 +457,14 @@
   .right_div {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 94vw;
+    align-items: flex-start;
+    width: 100vw;
     max-height: 435px;
     /* background-color: #ffffff; */
     padding: 0 0px;
     overflow-y: scroll;
-    border-right: 0vw solid transparent;
-    padding-right: 4vw;
+    border-right: 2vw solid transparent;
+    padding-right: 0vw;
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
     overflow-x: hidden;

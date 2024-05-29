@@ -126,7 +126,7 @@ body {
   }
   @media screen and (max-width: 520px) {
     *::-webkit-scrollbar {
-      width: 4px !important;
+      width: 5px !important;
       height: 0px;
     }
     *::-webkit-scrollbar-track {

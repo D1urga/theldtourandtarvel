@@ -2,7 +2,12 @@ import React from "react";
 import styles from "./aboutus.module.css";
 
 export default function AboutUs() {
-  const c1 = `Welcome to The Ldtravel, your trusted partner in transforming travel dreams into reality since [Year]. Founded by passionate travelers [Founders' Names], we specialize in creating unforgettable experiences with our tailor-made tours, seamless booking services for flights, hotels, and car rentals, and authentic local experiences led by knowledgeable guides. We prioritize customer satisfaction through a customer-centric approach, ensuring every journey is personalized to meet your unique preferences and needs. Committed to integrity, transparency, and sustainability, we build trust by offering competitive rates without hidden fees and promoting eco-friendly travel practices. Our dedicated team of travel enthusiasts and 24/7 customer support professionals are here to assist you every step of the way, making your adventure enjoyable and hassle-free. Join us at [Your Company Name] to explore the world and create lasting memories—one unforgettable trip at a time. Contact us today to start planning your next adventure!`;
+  const c1 = `Welcome to TheLD Tour and Travels, where your journey begins with us. We are more than just a travel agency; we are your travel companions, dedicated to making your dream vacations come true. Specializing in affordable and customized travel packages, we cater to both Indian and international destinations.
+
+At TheLD Tour and Travels, we understand that every traveler is unique. That’s why we offer personalized travel experiences tailored to your specific needs and desires. Whether you're dreaming of a grand international adventure or a delightful one-day getaway, we have something special for you. Our one-day trips are particularly popular, giving you the freedom to choose your food, vehicle, and the locations you wish to explore.`;
+  const c2 = `We believe that travel is not just about the destination, but also about the journey and the memories you create along the way. Our dedicated team is here to ensure that every detail of your trip is perfect, allowing you to focus on making unforgettable memories. From the moment you contact us, to the moment you return home, we are committed to providing you with exceptional service and a truly personalized travel experience.
+
+Join us at TheLD Tour and Travels, and let us help you explore the world your way. Your adventure awaits!`;
   return (
     <div className={styles.main}>
       <div className={styles.outer_div}>
@@ -23,7 +28,7 @@ export default function AboutUs() {
             <p>The Ldtravel</p>
           </div>
         </div>
-        <p className={styles.p2}>{c1}</p>
+        <p className={styles.p2}>{c2}</p>
       </div>
     </div>
   );
