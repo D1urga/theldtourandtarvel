@@ -32,10 +32,20 @@ export default function LandingPage() {
     elmntToView.scrollIntoView();
   };
 
+  const scrollabout = () => {
+    var elmntToView = document.getElementById("aboutus");
+    elmntToView.scrollIntoView();
+  };
+
   return (
     <div className={styles.main}>
       <div className={styles.outer_div}>
-        <Navbar fn2={scrollpack} fn3={scrolldes} fn5={scrollcont} />
+        <Navbar
+          fn2={scrollpack}
+          fn3={scrolldes}
+          fn5={scrollcont}
+          fn4={scrollabout}
+        />
         <div className={styles.page1}>
           <div className={styles.title}>
             <p>FIND THE PERFECT</p>
@@ -51,13 +61,17 @@ export default function LandingPage() {
               className={styles.input}
               placeholder="type a destination"
             ></input>
-            <button className={styles.btn}>Explore Destinations</button>
+            <button className={styles.btn} onClick={scrolldes}>
+              Explore Destinations
+            </button>
           </div>
         </div>
       </div>
 
       <Trips />
-      <AboutUs />
+      <div id="aboutus">
+        <AboutUs />
+      </div>
       <div id="contactid">
         <ContactUs />
       </div>

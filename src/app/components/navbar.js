@@ -34,7 +34,7 @@ export default function Navbar({ fn1, fn2, fn3, fn4, fn5 }) {
             <FaHandshake className={styles.icon} />
             <div>
               <p>Travel Agent?</p>
-              <p>Join</p>
+              <p>Become a partner</p>
             </div>
           </div>
         </div>

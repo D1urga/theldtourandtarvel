@@ -53,9 +53,18 @@ export default function Trips() {
         <p className={styles.p2}>{txt1}</p>
         <p className={styles.p1}>Bestselling Tour Packages</p>
         <div className={styles.bestcards}>
-          <Bestsellingcard />
-          <Bestsellingcard />
-          <Bestsellingcard />
+          <Link href={`/trips/bjhb`}>
+            {" "}
+            <Bestsellingcard />
+          </Link>
+          <Link href={`/trips/bjhb`}>
+            {" "}
+            <Bestsellingcard />
+          </Link>
+          <Link href={`/trips/bjhb`}>
+            {" "}
+            <Bestsellingcard />
+          </Link>
         </div>
       </div>
       <p className={styles.p1}>All Packages</p>

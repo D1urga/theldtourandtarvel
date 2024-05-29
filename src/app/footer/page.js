@@ -33,14 +33,14 @@ export default function Footer() {
           <p className={styles.p22}>Trust & safety</p>
 
           <p className={styles.p22}>Cookie policy</p>
-          <p className={styles.p22}>Privacy policy</p>
+          {/* <p className={styles.p22}>Privacy policy</p> */}
         </div>
         <div className={styles.div3}>
           {" "}
           <p className={styles.p21}>Explore</p>
           <p className={styles.p22}>Blog</p>
           <p className={styles.p22}>Review</p>
-          <p className={styles.p22}>Join</p>
+          <p className={styles.p22}>Join Us</p>
           <p className={styles.p22}>Places</p>
         </div>
         <div className={styles.div4}>

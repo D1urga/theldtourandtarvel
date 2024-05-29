@@ -67,6 +67,11 @@
   .p1 {
     font-size: 27px;
     font-weight: 520;
+    text-align: center;
+  }
+  .allresults {
+    padding-top: 15px;
+    font-weight: 600;
   }
   .p2 {
     padding: 40px 20vw;
@@ -141,7 +146,7 @@
     overflow-y: scroll;
 
     overflow-x: hidden;
-    height: 685px;
+    max-height: 685px;
     /* background-color: blue; */
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
