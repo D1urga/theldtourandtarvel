@@ -58,6 +58,7 @@ export default function Trips() {
           <Bestsellingcard />
         </div>
       </div>
+      <p className={styles.p1}>All Packages</p>
       <div className={styles.alltrips} id="destinationid">
         <div className={styles.left_div}>
           {/* <p className={styles.cats}>Categories</p>
@@ -94,6 +95,9 @@ export default function Trips() {
             ></input>
             <FaArrowRight className={styles.search_icon} />
           </div>
+          <p className={styles.allresults}>
+            showing all {filterdData.length} results
+          </p>
         </div>
         <div className={styles.grids}>
           <div className={styles.right_div}>
