@@ -409,8 +409,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid;
+    border: 1px solid;
+    box-shadow: 0 0 4px 0px;
     border-radius: 10px;
+    margin: 0 5px;
   }
   .left_div {
     display: flex;
@@ -427,12 +429,13 @@
   }
   .search {
     height: 45px;
-    width: 80vw;
+    width: 70vw;
     border: none;
     outline: none;
     box-shadow: 0 0 3px 0;
     border-radius: 50px;
     padding: 0 20px;
+    background-color: transparent;
     font-weight: 550;
   }
   .search_icon {
@@ -447,7 +450,7 @@
     flex-direction: column;
     align-items: center;
     width: 92vw;
-    max-height: 470px;
+    max-height: 440px;
     /* background-color: #ffffff; */
     padding: 0 0px;
     overflow-y: scroll;
