@@ -1,12 +1,25 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./trips.module.css";
 import { FaArrowRight } from "react-icons/fa";
 import Card from "../components/card";
 import Link from "next/link";
 import Bestsellingcard from "../components/bestsellingcard";
+import axios from "axios";
 
 export default function Trips() {
+  const [data, setData] = useState(null);
+  const fetchInfo = async () => {
+    const res = await fetch(
+      `https://theldtourandtravelbackend.onrender.com/api/v1/destinations/getDestination`,
+      {
+        credentials: "include",
+      }
+    );
+    const d = await res.json();
+    return setData(d.data);
+  };
+
   const [inputText, setInputText] = useState("");
   const inputHandler = (e) => {
     const lowerCase = e.target.value.toLowerCase();
@@ -39,17 +52,23 @@ export default function Trips() {
     { triplocation: "Bali local Tour Package" },
   ];
 
-  const filterdData = alltrips.filter((el) => {
-    if (inputText == "") {
-      return el.triplocation.toLowerCase().includes(inputText);
-    } else {
-      return el.triplocation.toLowerCase().includes(inputText);
-    }
-  });
+  const filterdData =
+    data &&
+    data.filter((el) => {
+      if (inputText == "") {
+        return el.packageName?.toLowerCase().includes(inputText);
+      } else {
+        return el.packageName?.toLowerCase().includes(inputText);
+      }
+    });
+  useEffect(() => {
+    fetchInfo();
+  }, []);
   return (
     <div>
       <div className={styles.tour_package} id="packageid">
         <p className={styles.p1}>Tour Package</p>
+
         <p className={styles.p2}>{txt1}</p>
         <p className={styles.p1}>Bestselling Tour Packages</p>
         <div className={styles.bestcards}>
@@ -105,16 +124,24 @@ export default function Trips() {
             <FaArrowRight className={styles.search_icon} />
           </div>
           <p className={styles.allresults}>
-            showing all {filterdData.length} results
+            showing all {filterdData && filterdData.length} results
           </p>
         </div>
         <div className={styles.grids}>
           <div className={styles.right_div}>
-            {filterdData.map((data, index) => (
-              <Link href={`/trips/bjhb`} key={index}>
-                <Card imgurl={"/bg2.png"} triplocation={data.triplocation} />
-              </Link>
-            ))}
+            {filterdData &&
+              filterdData.map((data, index) => (
+                <Link href={`/trips/${data._id}`} key={index}>
+                  <Card
+                    imgurl={data.imgurl}
+                    triplocation={data.packageName}
+                    originalCost={data.originalCost}
+                    discountCost={data.discountCost}
+                    duration={data.duration}
+                    cityTags={data.cityTags}
+                  />
+                </Link>
+              ))}
           </div>
         </div>
       </div>

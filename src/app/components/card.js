@@ -1,8 +1,20 @@
 import React from "react";
 import styles from "./styles/card.module.css";
-import { FaInstagram, FaRupeeSign } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaRupeeSign,
+  originalCost,
+  discountCost,
+} from "react-icons/fa";
 
-export default function Card({ imgurl, triplocation }) {
+export default function Card({
+  imgurl,
+  triplocation,
+  originalCost,
+  discountCost,
+  duration,
+  cityTags,
+}) {
   return (
     <div className={styles.Main}>
       <div className={styles.outer_div_1}>
@@ -15,11 +27,11 @@ export default function Card({ imgurl, triplocation }) {
       <div className={styles.outer_div_2}>
         <div className={styles.inner_div_1}>
           <p className={styles.tripLocation}>{triplocation}</p>
-          <p className={styles.tripDuration}>10 Days & 9 Nights</p>
+          <p className={styles.tripDuration}>{duration}</p>
         </div>
         <div className={styles.inner_div_2}>
-          <p className={styles.tripPrice1}>₹ 23,550/-</p>
-          <p className={styles.tripPrice2}>₹26,199</p>
+          <p className={styles.tripPrice1}>₹ {originalCost}/-</p>
+          <p className={styles.tripPrice2}>₹ {discountCost}</p>
         </div>
         <div className={styles.inner_div_3}>
           <p>Per Person on twin sharing</p>
@@ -51,9 +63,7 @@ export default function Card({ imgurl, triplocation }) {
         </div>
         <div className={styles.inner_div_5}>
           <p>Cities:</p>
-          <p className={styles.cities}>Kuta(5D)</p>
-          <p className={styles.cities}>{"-"}</p>
-          <p className={styles.cities}>Ubud(5D)</p>
+          <p className={styles.cities}>{cityTags}</p>
         </div>
         <div className={styles.inner_div_6}>
           <button className={styles.button1}>View Details</button>

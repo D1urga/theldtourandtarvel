@@ -1,8 +1,25 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import styles from "./trip.module.css";
 import { FaArrowLeft, FaPhoneAlt } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 export default function Trip({ params }) {
+  const router = useRouter();
+  const [data, setData] = useState(null);
+  const fetchInfo = async () => {
+    const res = await fetch(
+      `https://theldtourandtravelbackend.onrender.com/api/v1/destinations/getDestinationbyid/${decodeURIComponent(
+        params.trip[0]
+      )}`,
+      {
+        credentials: "include",
+      }
+    );
+    const d = await res.json();
+    return setData(d.data);
+  };
+
   const txt1 = `Your Andaman Honeymoon holiday begins with your arrival in Port Blair.
 
 Upon your arrival, at the Veer Savarkar Airport you will be greeted by the agent’s representative. Check in your hotel and find a beautifully decorated room with lots of honeymoon freebies. Have some delicious lunch at your hotel and make yourself at home.
@@ -19,11 +36,19 @@ At Port Blair, you go for city tours and sightseeing. The package takes you to C
 Comprising 572 islands, only a dozen or so are open to tourists, Havelock by far being the most popular for its splendid beaches and diving. Next place to visit as per your honeymoon trip is the luxurious Havelock Island after which you will proceed to the Radhanagar beach for some water fun. Shimmering turquoise waters are surrounded by primeval jungle and mangrove forest, and its sugar-white beaches melt under glorious flame-and-purple sunsets. Breathtakingly beautiful coastline, picturesque beaches, lush forested interior, crystal clear water, fantastic diving possibilities, and a far-flung location make the Andaman Islands a perfect place for honeymoon couples. Further, your romantic Andaman honeymoon takes you go to Elephant Beach, where you can go for snorkeling in the lucid waters. The luxurious Havelock island and proceed to the Radhanagar beach for some water fun. Further, your romantic Andaman honeymoon takes you go to Elephant Beach, where you can go for snorkeling in the lucid waters.
 
 Andaman offers a lot for adventure enthusiasts to explore. You can try watersports like Scuba Diving and sea bed walking as well. The cost of these activities is not included in the cost of your Andaman honeymoon package.`;
+  useEffect(() => {
+    fetchInfo();
+  }, []);
   return (
     <div className={styles.main}>
       <div className={styles.outer_div}>
         <div className={styles.heading}>
-          <div className={styles.back}>
+          <div
+            className={styles.back}
+            onClick={() => {
+              router.back();
+            }}
+          >
             <FaArrowLeft className={styles.arrow} />
             <p>Back</p>
           </div>
@@ -42,22 +67,22 @@ Andaman offers a lot for adventure enthusiasts to explore. You can try waterspor
           </div>
         </div>
         <div className={styles.details}>
-          <p className={styles.head}>Fantastic Andman Honeymoon Package</p>
+          <p className={styles.head}>{data && data.packageName}</p>
           <div className={styles.card}>
             <div className={styles.div1}>
-              <img src="/bg9.jpg" className={styles.img}></img>
+              <img src={data && data.imgurl} className={styles.img}></img>
             </div>
             <div className={styles.div2}>
               <div>
-                <p className={styles.p1}> 10 Days & 9 Nights</p>
-                <p className={styles.p2}>{"Cities : Kuto(5D) -> Ubud(5D)"}</p>
+                <p className={styles.p1}> {data && data.duration}</p>
+                <p className={styles.p2}>{data && data.cityTags}</p>
               </div>
               <p className={styles.p8}>Meals Sightseeing and more</p>
               <div>
                 <p className={styles.p4}>starting from :</p>
                 <div className={styles.cost}>
-                  <p className={styles.p5}>{"₹23500"}</p>
-                  <p className={styles.p6}>{"₹29500"}</p>
+                  <p className={styles.p5}>₹{data && data.originalCost}</p>
+                  <p className={styles.p6}>₹{data && data.discountCost}</p>
                 </div>
                 <p className={styles.p7}>Per person on twin sharing</p>
               </div>
@@ -65,36 +90,17 @@ Andaman offers a lot for adventure enthusiasts to explore. You can try waterspor
             </div>
           </div>{" "}
           <p className={styles.head}>Overview</p>
-          <p className={styles.txt}>{txt}</p>
+          <p className={styles.txt}>{data && data.description}</p>
           <p className={styles.head}>Itinerary</p>
           <div className={styles.iterations}>
             <div className={styles.it}>
               <div className={styles.tit}>
-                <p className={styles.pp1}>Day 1</p>
+                <p className={styles.pp1}>{data && data.ittitle}</p>
                 <div>
-                  <p className={styles.pp2}>
-                    Port Blair: Welcome to Andaman Islands
-                  </p>
-                  <p className={styles.pp2}>
-                    Corbyn’s Beach Cove | Light & Sound Show
-                  </p>
+                  <p className={styles.pp2}>{data && data.packageName}</p>
                 </div>
               </div>
-              <p className={styles.txt1}>{txt1}</p>
-            </div>
-            <div className={styles.it}>
-              <div className={styles.tit}>
-                <p className={styles.pp1}>Day 1</p>
-                <div>
-                  <p className={styles.pp2}>
-                    Port Blair: Welcome to Andaman Islands
-                  </p>
-                  <p className={styles.pp2}>
-                    Corbyn’s Beach Cove | Light & Sound Show
-                  </p>
-                </div>
-              </div>
-              <p className={styles.txt1}>{txt1}</p>
+              <p className={styles.txt1}>{data && data.itdes}</p>
             </div>
           </div>
         </div>
