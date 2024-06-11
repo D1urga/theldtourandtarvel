@@ -1,10 +1,22 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import styles from "./trip.module.css";
-import { FaArrowLeft, FaPhoneAlt } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaCross,
+  FaCut,
+  FaEnvelope,
+  FaEnvelopeOpen,
+  FaEnvelopeSquare,
+  FaIcons,
+  FaPhoneAlt,
+  FaTimes,
+  FaVoicemail,
+} from "react-icons/fa";
 import { useRouter } from "next/navigation";
 
 export default function Trip({ params }) {
+  const [isshowing, setIsShowing] = useState(false);
   const router = useRouter();
   const [data, setData] = useState(null);
   const fetchInfo = async () => {
@@ -20,22 +32,6 @@ export default function Trip({ params }) {
     return setData(d.data);
   };
 
-  const txt1 = `Your Andaman Honeymoon holiday begins with your arrival in Port Blair.
-
-Upon your arrival, at the Veer Savarkar Airport you will be greeted by the agent’s representative. Check in your hotel and find a beautifully decorated room with lots of honeymoon freebies. Have some delicious lunch at your hotel and make yourself at home.
-
-After some time, head out with your spouse for a little sightseeing. Your Andaman tour itinerary starts at Corbyn’s Cove Beach where you can enjoy quite a sight of turquoise waters. The beach also provides a lot of fun water activities like jet skiing or motor scooter.
-
-Your next destination would be the Light and Sound Show at the Cellular Jail where you would come across a musical tale of heroism of freedom fighters.
-
-On return to the hotel, you will be served a deliciously hot dinner. Enjoy your overnight stay at Port Blair.`;
-
-  const txt = `Spend your dream honeymoon by booking this 4 nights, 5 days Andaman honeymoon package. Your amazing honeymoon starts as you land in Port Blair and check in your hotel where a beautifully decorated room awaits you.Your Andaman honeymoon package covers Port Blair and Havelock - two of the most popular stops.
-At Port Blair, you go for city tours and sightseeing. The package takes you to Corbyn’s Cove Beach and Cellular Jail. Also, don’t miss the amazing Light and Sound Show at the Cellular Jail. It is a wonderful experience and creates a patriotic atmosphere with the powerful narration of the history of the freedom movement.
-
-Comprising 572 islands, only a dozen or so are open to tourists, Havelock by far being the most popular for its splendid beaches and diving. Next place to visit as per your honeymoon trip is the luxurious Havelock Island after which you will proceed to the Radhanagar beach for some water fun. Shimmering turquoise waters are surrounded by primeval jungle and mangrove forest, and its sugar-white beaches melt under glorious flame-and-purple sunsets. Breathtakingly beautiful coastline, picturesque beaches, lush forested interior, crystal clear water, fantastic diving possibilities, and a far-flung location make the Andaman Islands a perfect place for honeymoon couples. Further, your romantic Andaman honeymoon takes you go to Elephant Beach, where you can go for snorkeling in the lucid waters. The luxurious Havelock island and proceed to the Radhanagar beach for some water fun. Further, your romantic Andaman honeymoon takes you go to Elephant Beach, where you can go for snorkeling in the lucid waters.
-
-Andaman offers a lot for adventure enthusiasts to explore. You can try watersports like Scuba Diving and sea bed walking as well. The cost of these activities is not included in the cost of your Andaman honeymoon package.`;
   useEffect(() => {
     fetchInfo();
   }, []);
@@ -86,7 +82,14 @@ Andaman offers a lot for adventure enthusiasts to explore. You can try waterspor
                 </div>
                 <p className={styles.p7}>Per person on twin sharing</p>
               </div>
-              <button className={styles.btn}>Book Now</button>
+              <button
+                className={styles.btn}
+                onClick={() => {
+                  setIsShowing(!isshowing);
+                }}
+              >
+                Book Now
+              </button>
             </div>
           </div>{" "}
           <p className={styles.head}>Overview</p>
@@ -105,6 +108,53 @@ Andaman offers a lot for adventure enthusiasts to explore. You can try waterspor
           </div>
         </div>
       </div>
+
+      {isshowing ? (
+        <div className={styles.contact_card}>
+          <div className={styles.outer_div2}>
+            <div className={styles.cancel}>
+              <FaTimes
+                className={styles.cut}
+                onClick={() => {
+                  setIsShowing(!isshowing);
+                }}
+              />
+            </div>
+            <div className={styles.couter_div}>
+              <div className={styles.cdiv1}>
+                <img src="/logo.png" className={styles.cimg}></img>
+                <p className={styles.cp1}>TheIdtravel</p>
+                <div className={styles.c1}>
+                  <FaPhoneAlt className={styles.cicon1} />
+                  <p className={styles.cp2}>+91 9821915850</p>
+                </div>
+                <div className={styles.c2}>
+                  <FaEnvelope className={styles.cicon1} />
+                  <p className={styles.cp2}>theldtourandtravels@gmail.com</p>
+                </div>
+              </div>
+              <div className={styles.cdiv2}>
+                <p className={styles.ctext}>Name</p>
+                <input
+                  className={styles.cinput}
+                  placeholder="Enter your name"
+                ></input>
+                <p className={styles.ctext}>Phone no</p>
+                <input
+                  className={styles.cinput}
+                  placeholder="Enter phone no"
+                ></input>
+                <p className={styles.ctext}>Trip Details</p>
+                <textarea
+                  className={styles.cinput1}
+                  placeholder="Enter trip details"
+                ></textarea>
+                <button className={styles.cbtn}>submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

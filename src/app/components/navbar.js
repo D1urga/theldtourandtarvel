@@ -9,10 +9,13 @@ import {
   FaPhone,
   FaPhoneAlt,
   FaTwitter,
+  FaTimes,
+  FaEnvelope,
 } from "react-icons/fa";
 
 export default function Navbar({ fn1, fn2, fn3, fn4, fn5 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isshowing, setIsShowing] = useState(true);
   return (
     <div className={styles.main}>
       <div className={styles.outer_div}>
@@ -78,10 +81,63 @@ export default function Navbar({ fn1, fn2, fn3, fn4, fn5 }) {
                 </p>
               </li>{" "}
             </ul>
-            <button className={styles.btn}>Book Now</button>
+            <button
+              className={styles.btn}
+              onClick={() => {
+                setIsShowing(!isshowing);
+              }}
+            >
+              Book Now
+            </button>
           </div>
         </div>
       </div>
+      {isshowing ? (
+        <div className={styles.contact_card}>
+          <div className={styles.outer_div2}>
+            <div className={styles.cancel}>
+              <FaTimes
+                className={styles.cut}
+                onClick={() => {
+                  setIsShowing(!isshowing);
+                }}
+              />
+            </div>
+            <div className={styles.couter_div}>
+              <div className={styles.cdiv1}>
+                <img src="/logo.png" className={styles.cimg}></img>
+                <p className={styles.cp1}>TheIdtravel</p>
+                <div className={styles.c1}>
+                  <FaPhoneAlt className={styles.cicon1} />
+                  <p className={styles.cp2}>+91 9821915850</p>
+                </div>
+                <div className={styles.c2}>
+                  <FaEnvelope className={styles.cicon1} />
+                  <p className={styles.cp2}>theldtourandtravels@gmail.com</p>
+                </div>
+              </div>
+              <div className={styles.cdiv2}>
+                <p className={styles.ctext}>Name</p>
+                <input
+                  className={styles.cinput}
+                  placeholder="Enter your name"
+                ></input>
+                <p className={styles.ctext}>Phone no</p>
+                <input
+                  className={styles.cinput}
+                  placeholder="Enter phone no"
+                ></input>
+                <p className={styles.ctext}>Trip Details</p>
+                <textarea
+                  className={styles.cinput1}
+                  placeholder="Enter trip details"
+                ></textarea>
+                <button className={styles.cbtn}>submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
