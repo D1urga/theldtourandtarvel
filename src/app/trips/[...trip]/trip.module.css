@@ -820,10 +820,10 @@
   }
   .cut {
     cursor: pointer;
-    margin-top: 10vh;
+    margin-top: 6vh;
   }
   .outer_div2 {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -837,7 +837,7 @@
     }
   }
   .cimg {
-    height: 90px;
+    height: 85px;
   }
   .cancel {
     display: flex;
@@ -852,7 +852,6 @@
     justify-content: center;
     /* border-bottom: 1px solid; */
     padding-bottom: 10px;
-    margin-bottom: 10px;
   }
   .cp1 {
     font-size: 18px;
@@ -896,7 +895,7 @@
     height: 45px;
     width: 100%;
     padding: 0 10px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     background-color: transparent;
     border: 1px solid;
   }
@@ -916,7 +915,7 @@
   .ctext {
     font-size: 13px;
     font-weight: 550;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
   }
   .cbtn {
     width: 100%;

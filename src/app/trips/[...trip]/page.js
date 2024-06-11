@@ -144,6 +144,11 @@ export default function Trip({ params }) {
                   className={styles.cinput}
                   placeholder="Enter phone no"
                 ></input>
+                <p className={styles.ctext}>Email</p>
+                <input
+                  className={styles.cinput}
+                  placeholder="Enter email id"
+                ></input>
                 <p className={styles.ctext}>Trip Details</p>
                 <textarea
                   className={styles.cinput1}
