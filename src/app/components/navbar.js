@@ -15,7 +15,7 @@ import {
 
 export default function Navbar({ fn1, fn2, fn3, fn4, fn5 }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isshowing, setIsShowing] = useState(true);
+  const [isshowing, setIsShowing] = useState(false);
   return (
     <div className={styles.main}>
       <div className={styles.outer_div}>
