@@ -72,9 +72,8 @@ export default function Trips() {
             <div className={styles.bestsellingcroll}>
               {data1 &&
                 data1.map((val, index) => (
-                  <Link href={`/trips/${val._id}`}>
+                  <Link href={`/trips/${val._id}`} key={index}>
                     <Bestsellingcard
-                      key={index}
                       destinatioName={val.packageName}
                       duration={val.duration}
                       originalCost={val.originalCost}
