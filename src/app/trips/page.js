@@ -74,6 +74,7 @@ export default function Trips() {
                 data1.map((val, index) => (
                   <Link href={`/trips/${val._id}`}>
                     <Bestsellingcard
+                      key={index}
                       destinatioName={val.packageName}
                       duration={val.duration}
                       originalCost={val.originalCost}
