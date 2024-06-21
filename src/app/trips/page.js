@@ -9,7 +9,11 @@ import axios from "axios";
 
 export default function Trips() {
   const [data, setData] = useState(null);
+  const [data1, setData1] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading1, setIsLoading1] = useState(false);
   const fetchInfo = async () => {
+    setIsLoading(true);
     const res = await fetch(
       `https://theldtourandtravelbackend.onrender.com/api/v1/destinations/getDestination`,
       {
@@ -17,7 +21,20 @@ export default function Trips() {
       }
     );
     const d = await res.json();
-    return setData(d.data);
+    setIsLoading(false);
+    return setData(d.data.reverse());
+  };
+  const fetchInfo1 = async () => {
+    setIsLoading1(true);
+    const res = await fetch(
+      `https://theldtourandtravelbackend.onrender.com/api/v1/destinations/getDestinationBestSelling`,
+      {
+        credentials: "include",
+      }
+    );
+    const d = await res.json();
+    setIsLoading1(false);
+    return setData1(d.data.reverse());
   };
 
   const [inputText, setInputText] = useState("");
@@ -30,28 +47,6 @@ export default function Trips() {
           booking tour packages from India is the best way to explore the
           world’s varied landscapes.`;
 
-  const alltrips = [
-    { triplocation: "Himalaya" },
-    { triplocation: "Himalaya" },
-    { triplocation: "Himalaya" },
-    { triplocation: "Himalaya" },
-    { triplocation: "Ladakh" },
-    { triplocation: "Ladakh" },
-    { triplocation: "Ladakh" },
-    { triplocation: "Ladakh" },
-    { triplocation: "Ladakh" },
-    { triplocation: "Ladakh" },
-    { triplocation: "Bali local Tour Package" },
-    { triplocation: "Bali local Tour Package" },
-    { triplocation: "Bali local Tour Package" },
-    { triplocation: "Bali local Tour Package" },
-    { triplocation: "Bali local Tour Package" },
-    { triplocation: "Bali local Tour Package" },
-    { triplocation: "Bali local Tour Package" },
-    { triplocation: "Bali local Tour Package" },
-    { triplocation: "Bali local Tour Package" },
-  ];
-
   const filterdData =
     data &&
     data.filter((el) => {
@@ -63,6 +58,7 @@ export default function Trips() {
     });
   useEffect(() => {
     fetchInfo();
+    fetchInfo1();
   }, []);
   return (
     <div>
@@ -72,18 +68,26 @@ export default function Trips() {
         <p className={styles.p2}>{txt1}</p>
         <p className={styles.p1}>Bestselling Tour Packages</p>
         <div className={styles.bestcards}>
-          <Link href={`/trips/bjhb`}>
-            {" "}
-            <Bestsellingcard />
-          </Link>
-          <Link href={`/trips/bjhb`}>
-            {" "}
-            <Bestsellingcard />
-          </Link>
-          <Link href={`/trips/bjhb`}>
-            {" "}
-            <Bestsellingcard />
-          </Link>
+          {!isLoading1 ? (
+            <div className={styles.bestsellingcroll}>
+              {data1 &&
+                data1.map((val, index) => (
+                  <Link href={`/trips/${val._id}`}>
+                    <Bestsellingcard
+                      destinatioName={val.packageName}
+                      duration={val.duration}
+                      originalCost={val.originalCost}
+                      discountCost={val.discountCost}
+                      bgimg={val.imgurl}
+                    />
+                  </Link>
+                ))}
+            </div>
+          ) : (
+            <div className={styles.load}>
+              <p>Loading please wait..</p>
+            </div>
+          )}
         </div>
       </div>
       <p className={styles.p1}>All Packages</p>
@@ -128,21 +132,27 @@ export default function Trips() {
           </p>
         </div>
         <div className={styles.grids}>
-          <div className={styles.right_div}>
-            {filterdData &&
-              filterdData.map((data, index) => (
-                <Link href={`/trips/${data._id}`} key={index}>
-                  <Card
-                    imgurl={data.imgurl}
-                    triplocation={data.packageName}
-                    originalCost={data.originalCost}
-                    discountCost={data.discountCost}
-                    duration={data.duration}
-                    cityTags={data.cityTags}
-                  />
-                </Link>
-              ))}
-          </div>
+          {!isLoading ? (
+            <div className={styles.right_div}>
+              {filterdData &&
+                filterdData.map((data, index) => (
+                  <Link href={`/trips/${data._id}`} key={index}>
+                    <Card
+                      imgurl={data.imgurl}
+                      triplocation={data.packageName}
+                      originalCost={data.originalCost}
+                      discountCost={data.discountCost}
+                      duration={data.duration}
+                      cityTags={data.cityTags}
+                    />
+                  </Link>
+                ))}
+            </div>
+          ) : (
+            <div className={styles.load}>
+              <p>Loading please wait..</p>
+            </div>
+          )}
         </div>
       </div>
     </div>

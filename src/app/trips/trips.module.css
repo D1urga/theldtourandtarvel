@@ -80,9 +80,6 @@
   }
   .bestcards {
     width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
   }
   .alltrips {
     display: flex;
@@ -147,6 +144,7 @@
 
     overflow-x: hidden;
     max-height: 685px;
+
     /* background-color: blue; */
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
@@ -172,6 +170,22 @@
   .cat p {
     font-size: 14px;
     font-weight: 520;
+  }
+  .bestsellingcroll {
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+  }
+  .load {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  .load p {
+    color: blue;
+    font-weight: 700;
   }
 }
 @media screen and (max-width: 900px) and (min-width: 520px) {
@@ -253,8 +267,10 @@
   }
   .bestcards {
     width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  }
+  .bestsellingcroll {
+    display: flex;
+    overflow: scroll;
   }
   .alltrips {
     display: flex;
@@ -325,6 +341,17 @@
   .cat p {
     font-size: 14px;
     font-weight: 520;
+  }
+  .load {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .load p {
+    color: blue;
+    font-weight: 700;
   }
 }
 @media screen and (max-width: 520px) {
@@ -416,9 +443,10 @@
   }
   .bestcards {
     width: 100vw;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(1, 1fr);
+  }
+  .bestsellingcroll {
+    display: flex;
+    overflow-x: scroll;
   }
   .alltrips {
     display: flex;
@@ -505,5 +533,17 @@
   .cat p {
     font-size: 14px;
     font-weight: 520;
+  }
+  .load {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .load p {
+    color: blue;
+    font-size: 15px;
+    font-weight: 600;
   }
 }
