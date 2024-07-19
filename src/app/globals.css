@@ -90,8 +90,8 @@ body {
 
   @media screen and (min-width: 900px) {
     *::-webkit-scrollbar {
-      width: 6px;
-      height: 3px;
+      width: 8px;
+      height: 8px;
     }
     *::-webkit-scrollbar-track {
       /* background: rgb(255, 255, 255); */
@@ -99,7 +99,7 @@ body {
     }
     *::-webkit-scrollbar-thumb {
       background: rgb(162, 151, 151);
-      border-radius: 15px;
+      border-radius: 6px;
     }
     input:focus {
       outline: none;
