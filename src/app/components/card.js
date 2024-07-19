@@ -33,9 +33,9 @@ export default function Card({
           <p className={styles.tripPrice1}>₹ {originalCost}/-</p>
           <p className={styles.tripPrice2}>₹ {discountCost}</p>
         </div>
-        <div className={styles.inner_div_3}>
-          <p>Per Person on twin sharing</p>
-        </div>
+        {/* <div className={styles.inner_div_3}> */}
+        {/* <p>Per Person on twin sharing</p> */}
+        {/* </div> */}
         <div className={styles.inner_div_4}>
           <p>Hotel included: </p>
           <form className={styles.form1}>

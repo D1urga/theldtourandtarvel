@@ -119,7 +119,7 @@ export default function Trip({ params }) {
                   <p className={styles.p5}>₹{data && data.originalCost}</p>
                   <p className={styles.p6}>₹{data && data.discountCost}</p>
                 </div>
-                <p className={styles.p7}>Per person on twin sharing</p>
+                {/* <p className={styles.p7}>Per person on twin sharing</p> */}
               </div>
               <button
                 className={styles.btn}
